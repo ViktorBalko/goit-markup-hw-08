@@ -1,0 +1,54 @@
+.clients__box {
+  display: flex;
+  padding-left: 0px;
+  padding-bottom: 94px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.clients__title {
+  color: var(--main-text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clients__item + .clients__item {
+  margin-left: 30px;
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid var(--main-icon-color);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--active-text-color);
+  }
+}
+
+.clients__icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--main-icon-color);
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--active-text-color);
+  }
+}

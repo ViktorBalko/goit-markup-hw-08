@@ -1,0 +1,26 @@
+.main {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.main__box {
+  display: flex;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 0px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.main__button button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.main__button:nth-child(n + 2) {
+  margin-left: 8px;
+}
