@@ -95,6 +95,10 @@
 
 .footer__link-item:last-child {
   padding-bottom: 60px;
+
+  @media screen and (min-width: $mobile) {
+    padding-bottom: 0px;
+  }
 }
 
 .footer__mail,
@@ -134,9 +138,10 @@
   text-transform: uppercase;
   color: var(--white-color);
 
-  // @media screen and (min-width: $mobile) {
-  //   text-align: center;
-  // }
+  @media screen and (min-width: $mobile) {
+    text-align: center;
+    padding-top: 60px;
+  }
 }
 
 .footer__social {

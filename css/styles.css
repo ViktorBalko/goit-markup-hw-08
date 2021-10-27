@@ -529,7 +529,7 @@ button:focus {
   color: var(--white-color);
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -540,6 +540,11 @@ button:focus {
   margin-bottom: 0px;
   padding-top: 200px;
   padding-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
 }
 
 .hero__button {
@@ -1030,6 +1035,11 @@ button:focus {
 .footer__link-item:last-child {
   padding-bottom: 60px;
 }
+@media screen and (min-width: 480px) {
+  .footer__link-item:last-child {
+    padding-bottom: 0px;
+  }
+}
 
 .footer__mail,
 .footer__tel {
@@ -1067,6 +1077,12 @@ button:focus {
   padding-bottom: 20px;
   text-transform: uppercase;
   color: var(--white-color);
+}
+@media screen and (min-width: 480px) {
+  .footer__social-title {
+    text-align: center;
+    padding-top: 60px;
+  }
 }
 
 .footer__social {
@@ -1212,6 +1228,13 @@ button:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--white-color);
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    transform: scale(0.95);
+    left: 0%;
+    top: 7%;
+  }
+}
 
 .modal__close {
   position: absolute;
@@ -1291,6 +1314,11 @@ button:focus {
   border-radius: 4px;
   cursor: pointer;
 }
+@media screen and (min-width: 480px) {
+  .modal__input {
+    width: 100%;
+  }
+}
 
 .modal__partition {
   display: block;
@@ -1309,6 +1337,11 @@ button:focus {
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
+}
+@media screen and (min-width: 480px) {
+  .modal__comment {
+    width: 100%;
+  }
 }
 
 .modal__order {

@@ -15,18 +15,19 @@
 </head>
 
 <body class="body">
+<!-- header -->
         <header class="header">
             <div class="container">
                 <nav class="header__box">
-                    <a class="logo header__logo" href="./"><span class="logo__web">Web</span><span
+                    <a class="logo header__logo" href="./index.html"><span class="logo__web">Web</span><span
                             class="logo__studio">Studio</span></a>
-
+<!-- heder__nav  -->
                     <ul class="header__nav">
                         <li class="header__button-area"><a class="header__button" href="">Студия</a></li>
                         <li class="header__button-area"><a class="header__button" href="./portfolio.html">Портфолио</a></li>
                         <li class="header__button-area"><a class="header__button" href="">Контакты</a></li>
                     </ul>
-                    <!-- header-link -->
+<!-- header__link -->
                     <ul class="header__link">
                         <li class="header__link-item"><a class="header__mail" href="mailto:info@devstudio.com">
                                 <svg class="header__mail-icon">
@@ -42,6 +43,16 @@
                 </nav>
             </div>
         </header>
+<!-- hero -->
+        <div class="hero">
+            <div class="container">
+                <section class="hero__box">
+                    <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
+                    <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
+                </section>
+            </div>
+        </div>
+<!-- clients -->
         <section class="clients">
             <div class="container">
                 <h2 class="clients__title">Постоянные клиенты</h2>
@@ -91,7 +102,7 @@
                 </ul>
             </div>
         </section>
-
+<!-- footer -->
         <div class="footer">
         <div class="container">
         <footer class="footer__box">
@@ -108,7 +119,7 @@
             </li>
             </ul>
             </section>
-                    <!-- social -->
+<!-- footer__social -->
         <section class="footer__social-area">
                         <h3 class="footer__social-title">Присоединяйтесь</h3>
                         <ul class="social footer__social">
@@ -142,7 +153,7 @@
                             </li>
                         </ul>
                     </section>
-                    <!-- subscribe -->
+<!-- footer__subscribe -->
                     <section class="footer__subcribe-area">
                         <h3 class="footer__subscribe-title">Подпишитесь на рассылку</h3>
                         <form class="footer__subscribe">
@@ -158,4 +169,82 @@
                         </form>
                     </section>
                 </footer>
+
+<!-- backdrop !hidden! modal -->
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <h3 class="modal__title">Оставьте свои данные, мы вам перезвоним</h3>
+                        <form class="modal__form">
+<!-- modal-form -->
+    <!-- name -->
+                            <label class="modal__partition">
+                                <p class="modal__subtitle">Имя</p>
+                                <div class="modal__box">
+                                    <input type="text" name="user-name" class="modal__input" required />
+                                    <svg class="modal__icon">
+                                        <use href="./images/sprite.svg#icon-modal-name"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                            <!-- phone -->
+                            <label class="modal__partition">
+                                <p class="modal__subtitle">Телефон</p>
+                                <div class="modal__box">
+                                    <input type="tel" name="user-tel" class="modal__input" required />
+                                    <svg class="modal__icon">
+                                        <use href="./images/sprite.svg#icon-modal-phone"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                            <!-- mail -->
+                            <label class="modal__partition">
+                                <p class="modal__subtitle">Email</p>
+                                <div class="modal__box">
+                                    <input type="email" name="user-email" class="modal__input" />
+                                    <svg class="modal__icon">
+                                        <use href="./images/sprite.svg#icon-modal-mail"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                            <!-- comment -->
+                            <label class="modal__partition">
+                                <p class="modal__subtitle">Комментарий</p>
+                                <textarea name="text" placeholder="Введите текст" class="modal__comment"></textarea>
+                            </label>
+                            <!-- order -->
+                            <label class="modal__order">
+                                <div class="modal__checkbox">
+                                    <input type="checkbox" class="modal__check-on" required />
+                                    <span class="modal__check-off"></span>
+                                </div>
+                                <span class="modal__agreement">Соглашаюсь с рассылкой и принимаю
+                                    <a href="" class="modal__agreement-link">Условия договора</a>
+                                </span>
+                            </label>
+                            <button class="modal__send">Отправить</button>
+                        </form>
+                        <!-- button-close -->
+                        <button class="modal__close" data-modal-close>
+                            <svg class="modal__close-icon">
+                                <use href="./images/sprite.svg#icon-modal-close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+                <script src="./js/script.js"></script>
+                
+                <script>
+                    (() => {
+                        document.querySelector('.js-subcribe-form').addEventListener('submit', e => {
+                            e.preventDefault();
+
+                            new FormData(e.currentTarget).forEach((value, name) =>
+                                console.log(`${name}: ${value}`),
+                            );
+                        });
+                    })();
+                </script>
+
     </body>
