@@ -2,18 +2,54 @@
   border-bottom: 1px solid #ececec;
 }
 
+// .header__box-adaptive {
+//   @media screen and (max-width: 480px) {
+//     display: inline-flex;
+//   }
+// }
+
+// .header__nav-adaptive {
+//   @media screen and (max-width: 1199px) {
+//     display: none;
+//   }
+// }
+
+// .header__link-adaptive {
+//   @media screen and (max-width: 1199px) {
+//     display: none;
+//   }
+// }
+
 .header__box {
   display: flex;
   margin-right: auto;
   margin-left: auto;
   align-items: center;
   height: 80px;
+
+  @media screen and (min-width: $mobile) {
+    display: inline-flex;
+    width: 100%;
+    // background-color: rgba(0, 128, 0, 0.253);
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+    width: 100%;
+    background-color: rgba(128, 0, 128, 0.253);
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: inline-flex;
+    width: 100%;
+    background-color: rgba(128, 0, 38, 0.253);
+  }
 }
 
 .header__logo {
   display: flex;
-  margin-right: 93px;
-  margin-left: auto;
+  // margin-right: 93px;
+  // margin-left: auto;
 }
 
 .header__button {
@@ -60,6 +96,11 @@
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+
+  @media screen and (max-width: $mobile-max) {
+    // background-color: green;
+    display: none;
+  }
 }
 
 .header__button-area + .header__button-area {
@@ -75,6 +116,11 @@
   margin-right: auto;
   margin-left: 305px;
   padding-left: 0px;
+
+  @media screen and (max-width: $mobile-max) {
+    // background-color: green;
+    display: none;
+  }
 }
 
 .header__link-item + .header__link-item {
