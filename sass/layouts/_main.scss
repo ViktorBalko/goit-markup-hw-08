@@ -12,6 +12,10 @@
   padding-top: 94px;
   padding-bottom: 50px;
   justify-content: center;
+
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    flex-wrap: wrap;
+  }
 }
 
 .main__button button {
@@ -19,6 +23,10 @@
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+
+  // @media screen and (min-width: 320px) and (max-width: $mobile) {
+  //   margin: 0;
+  // }
 }
 
 .main__button:nth-child(n + 2) {
