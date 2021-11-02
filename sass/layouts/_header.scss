@@ -1,6 +1,6 @@
 .header {
   border-bottom: 1px solid #ececec;
-  @media screen and (min-width: 320px) and (max-width: $mobile) {
+  @media screen and (min-width: $mobile) {
     position: relative;
   }
 
@@ -38,18 +38,27 @@
     @media screen and (min-width: $tablet) {
       display: inline-flex;
       width: 100%;
-      background-color: rgba(128, 0, 128, 0.253);
+      // background-color: transparent;
+      // background-color: rgba(128, 0, 128, 0.253);
     }
 
     @media screen and (min-width: $desktop) {
       display: inline-flex;
       width: 100%;
-      background-color: rgba(128, 0, 38, 0.253);
+      // background-color: transparent;
     }
   }
 
   .header__logo {
     display: flex;
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 80px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 93px;
+    }
     // margin-right: 93px;
     // margin-left: auto;
   }
@@ -104,8 +113,16 @@
     margin-bottom: 0px;
 
     @media screen and (max-width: $mobile-max) {
-      // background-color: green;
       display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      background-color: aqua;
     }
   }
 
