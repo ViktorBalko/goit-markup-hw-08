@@ -6,6 +6,7 @@
   background-image: url("../images/main/hero/hero.mobile.jpg");
   background-size: cover;
   background-position: top;
+  // background-position: left top;
   background-repeat: no-repeat;
   max-width: 1600px;
 
@@ -13,24 +14,27 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url("../images/main/hero/hero.mobile@2x.jpg");
-
-    @media screen and (min-width: $tablet) {
-      background-image: linear-gradient(
-          to left,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url("../images/main/hero/hero.tablet.jpg");
-    }
   }
 
-  // .hero__title-adaptive {
-  //   @media screen and (max-width: 480px) {
-  //     font-size: 26px;
-  //     line-height: 162%;
-  //     /* or 162% */
-  //   }
-  // }
+  @media screen and (min-width: $tablet) {
+    background-image: url("../images/main/hero/hero.tablet.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/main/hero/hero.tablet@2x.jpg");
+    }
+
+    @media screen and (min-width: $desktop) {
+      background-image: url("../images/main/hero/hero.desktop.jpg");
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../images/main/hero/hero.desktop@2x.jpg");
+      }
+    }
+  }
 
   .hero__box {
     display: block;
@@ -41,9 +45,11 @@
   .hero__title {
     color: var(--white-color);
     font-family: "Roboto", sans-serif;
+    font-style: normal;
     font-weight: 900;
     font-size: 26px;
-    line-height: 1.36;
+    line-height: 1.62;
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -52,11 +58,13 @@
     margin-right: auto;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 200px;
+    padding-top: 118px;
     padding-bottom: 30px;
 
     @media screen and (min-width: $desktop) {
+      padding-top: 200px;
       font-size: 44px;
+      line-height: 1.36;
     }
   }
 
@@ -76,7 +84,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
-    margin-bottom: 200px;
+    margin-bottom: 118px;
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 10px;
@@ -87,6 +95,10 @@
       background-color: var(--active-btn-order);
       border-radius: 4px;
       border: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 200px;
     }
   }
 }
