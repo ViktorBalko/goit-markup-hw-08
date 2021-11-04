@@ -7,22 +7,27 @@
 .main__box {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 0px;
-  margin-top: 0px;
   padding-left: 0px;
-  padding-top: 94px;
-  padding-bottom: 50px;
-  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
 }
 
 .main__button button {
   padding: 6px 22px;
 }
 
-// .main__button:nth-child(-n + 2) {
-//   margin-left: 5px;
-// }
-
 .main__button {
   margin-right: 10px;
+  margin-bottom: 10px;
 }

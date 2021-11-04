@@ -70,6 +70,16 @@
   background-color: var(--white-color);
 }
 
+.header__nav-current::after {
+  position: relative;
+  top: 28px;
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--active-text-color);
+}
 .header__nav-link:hover:after,
 .header__nav-link:focus:after {
   position: relative;
@@ -84,6 +94,10 @@
 
 .header__nav-current {
   color: var(--active-text-color);
+}
+
+.current-color::after .header__nav-link {
+  color: aqua;
 }
 
 .header__contacts {
