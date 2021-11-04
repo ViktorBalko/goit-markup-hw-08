@@ -17,21 +17,12 @@
   transform: translate(-50%, -50%);
   transition: transform 700ms ease-out;
   width: 100%;
-  // max-width: 528px;
-  // min-height: 581px;
   max-width: 450px;
   min-height: 609px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--white-color);
-
-  // @media screen and (min-width: $mobile) {
-  //   transform: scale(0.95);
-  //   left: 0%;
-  //   top: 7%;
-  //   // transform: translate(50%, 50%);
-  // }
 
   @media screen and (min-width: $desktop) {
     max-width: 528px;
@@ -110,7 +101,6 @@
 }
 
 .modal__input-bar {
-  // background-color: brown;
   width: 100%;
 }
 
@@ -147,10 +137,7 @@
   width: 100%;
   max-width: 448px;
   height: 120px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -162,13 +149,8 @@
 }
 
 .modal__order {
-  // display: flex;
-  // flex-wrap: nowrap;
-  // align-items: center;
-  // justify-content: center;
   display: block;
   width: 100%;
-  // max-width: 370px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 30px;
