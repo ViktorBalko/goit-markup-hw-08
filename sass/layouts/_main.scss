@@ -6,29 +6,23 @@
 
 .main__box {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 0px;
   margin-top: 0px;
   padding-left: 0px;
   padding-top: 94px;
   padding-bottom: 50px;
   justify-content: center;
-
-  @media screen and (min-width: 320px) and (max-width: $mobile) {
-    flex-wrap: wrap;
-  }
 }
 
 .main__button button {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
-
-  // @media screen and (min-width: 320px) and (max-width: $mobile) {
-  //   margin: 0;
-  // }
+  padding: 6px 22px;
 }
 
-.main__button:nth-child(n + 2) {
-  margin-left: 8px;
+// .main__button:nth-child(-n + 2) {
+//   margin-left: 5px;
+// }
+
+.main__button {
+  margin-right: 10px;
 }
