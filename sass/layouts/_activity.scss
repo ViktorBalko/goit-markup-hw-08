@@ -62,9 +62,15 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   align-items: center;
-
   color: var(--white-color);
-  background: var(--activity-text-background-color);
+
+  // background: var(--activity-text-background-color);
+  background: linear-gradient(
+    45deg,
+    rgb(2, 109, 197),
+    rgba(3, 75, 134, 0.925),
+    rgba(33, 149, 243, 0.678)
+  );
 
   margin-bottom: 0px;
   margin-top: 0px;

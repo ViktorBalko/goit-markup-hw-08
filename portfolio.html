@@ -66,10 +66,10 @@
     <div class="mobile__container" id="mobile__container" data-menu>
       <ul class="mobile__nav">
         <li class="mobile__nav-item">
-          <a class="mobile__nav-link mobile__nav-current" href="./index.html">Студия</a>
+          <a class="mobile__nav-link" href="./index.html">Студия</a>
         </li>
         <li class="mobile__nav-item">
-          <a class="mobile__nav-link" href="./portfolio.html">Портфолио</a>
+          <a class="mobile__nav-link  mobile__nav-current" href="./portfolio.html">Портфолио</a>
         </li>
         <li class="mobile__nav-item">
           <a class="mobile__nav-link" href="./">Контакты</a>
@@ -126,7 +126,17 @@
           <li class="mosaic__component">
             <a href="" class="mosaic__link"> 
             <div class="mosaic__image">
-              <img class="mosaic__poster" src="./images/portfolio/img1.jpg" alt="Ультрабук" width="370" height="294" />
+              <source
+                srcset="./images/portfolio/desktop/portfoliolink1desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink1desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" type="image/jpeg">
+              <source
+                srcset="./images/portfolio/tablet/portfoliolink1tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink1tablet@2x.jpg 2x"
+                media="(min-width: 768px)" type="image/jpeg">
+              <source
+                srcset="./images/portfolio/mobile/portfoliolink1mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink1mobile@2x.jpg 2x"
+                media="(max-width: 767px)" type="image/jpeg">
+              <img src="./images/portfolio/desktop/portfoliolink1desktop.jpg " alt="Технокряк" width="100%" height="294px" >
+              </picture>
               <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
             <div class="mosaic__inscription">
@@ -138,7 +148,18 @@
           <li class="mosaic__component">
             <a href="" class="mosaic__link">
             <div class="mosaic__image"> 
-              <img class="mosaic__poster" src="./images/portfolio/img2.jpg" alt="Постер" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/portfolio/desktop/portfoliolink2desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink2desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/tablet/portfoliolink2tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink2tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/mobile/portfoliolink2mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink2mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" type="image/jpeg">
+                <img src="./images/portfolio/desktop/portfoliolink2desktop.jpg" alt="Постер New Orlean vs Golden Star" width="100%" height="294px" >
+              </picture>
               <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
             <div class="mosaic__inscription">
@@ -150,7 +171,18 @@
           <li class="mosaic__component">
             <a href="" class="mosaic__link">
             <div class="mosaic__image">
-              <img class="mosaic__poster" src="./images/portfolio/img3.jpg" alt="Лого ресторан Sea food" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/portfolio/desktop/portfoliolink3desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink3desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/tablet/portfoliolink3tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink3tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/mobile/portfoliolink3mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink3mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" type="image/jpeg">
+                <img src="./images/portfolio/desktop/portfoliolink3desktop.jpg" alt="Ресторан Seafood" width="100%" height="294px" >
+              </picture>
               <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
             <div class="mosaic__inscription">
@@ -162,7 +194,18 @@
           <li class="mosaic__component">
             <a href="" class="mosaic__link">
             <div class="mosaic__image">
-              <img class="mosaic__poster" src="./images/portfolio/img4.jpg" alt="Накладные наушники" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/portfolio/desktop/portfoliolink4desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink4desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/tablet/portfoliolink4tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink4tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/mobile/portfoliolink4mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink4mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" type="image/jpeg">
+                <img src="./images/portfolio/desktop/portfoliolink4desktop.jpg" alt="Проект Prime" width="100%" height="294px" >
+              </picture>
               <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
             <div class="mosaic__inscription">
@@ -174,7 +217,18 @@
           <li class="mosaic__component">
             <a href="" class="mosaic__link">
             <div class="mosaic__image">
-              <img class="mosaic__poster" src="./images/portfolio/img5.jpg" alt="Коробки" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/portfolio/desktop/portfoliolink5desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink5desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/tablet/portfoliolink5tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink5tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/mobile/portfoliolink5mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink5mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" type="image/jpeg">
+                <img src="./images/portfolio/desktop/portfoliolink5desktop.jpg" alt="Проект Boxes" width="100%" height="294px" >
+              </picture>
               <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
             <div class="mosaic__inscription">
@@ -186,7 +240,18 @@
           <li class="mosaic__component">
             <a href="" class="mosaic__link">
             <div class="mosaic__image">
-              <img class="mosaic__poster" src="./images/portfolio/img6.jpg" alt="Компьютер iMac" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/portfolio/desktop/portfoliolink6desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink6desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/tablet/portfoliolink6tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink6tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/mobile/portfoliolink6mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink6mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" type="image/jpeg">
+                <img src="./images/portfolio/desktop/portfoliolink6desktop.jpg" alt="Inspiration has no Borders" width="100%" height="294px" >
+              </picture>
               <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
             <div class="mosaic__inscription">
@@ -198,7 +263,18 @@
           <li class="mosaic__component">
             <a href="" class="mosaic__link">
             <div class="mosaic__image">
-              <img class="mosaic__poster" src="./images/portfolio/img7.jpg" alt="Открытая книга" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/portfolio/desktop/portfoliolink7desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink7desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/tablet/portfoliolink7tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink7tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/mobile/portfoliolink7mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink7mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" type="image/jpeg">
+                <img src="./images/portfolio/desktop/portfoliolink7desktop.jpg" alt="Издание Limited Edition" width="100%" height="294px" >
+              </picture>
               <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
             <div class="mosaic__inscription">
@@ -210,7 +286,18 @@
           <li class="mosaic__component">
             <a href="" class="mosaic__link">
             <div class="mosaic__image">
-              <img class="mosaic__poster" src="./images/portfolio/img8.jpg" alt="Реклама проект LAB" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/portfolio/desktop/portfoliolink8desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink8desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/tablet/portfoliolink8tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink8tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/mobile/portfoliolink8mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink8mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" type="image/jpeg">
+                <img src="./images/portfolio/desktop/portfoliolink8desktop.jpg" alt="Проект LAB" width="100%" height="294px" >
+              </picture>
               <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
             <div class="mosaic__inscription">
@@ -222,7 +309,18 @@
           <li class="mosaic__component">
             <a href="" class="mosaic__link">
             <div class="mosaic__image">
-              <img class="mosaic__poster" src="./images/portfolio/img9.jpg" alt="Интернет страница на ноутбуке" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/portfolio/desktop/portfoliolink9desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink9desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/tablet/portfoliolink9tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink9tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpeg">
+                <source
+                  srcset="./images/portfolio/mobile/portfoliolink9mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink9mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" type="image/jpeg">
+                <img src="./images/portfolio/desktop/portfoliolink9desktop.jpg" alt="Growing Business" width="100%" height="294px" >
+              </picture>
               <p class="mosaic__banner">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
             <div class="mosaic__inscription">

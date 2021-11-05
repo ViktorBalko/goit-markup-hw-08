@@ -11,9 +11,8 @@
   z-index: 2;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:focus,
   &:hover,
-  &:active {
+  &:focus {
     fill: var(--active-text-color);
     background-color: transparent;
     border: none;
