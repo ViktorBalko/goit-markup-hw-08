@@ -13,14 +13,12 @@
   background-color: var(--white-color);
 
   @media screen and (min-width: $tablet) {
-    // display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
   }
 
   @media screen and (min-width: $desktop) {
-    // display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 30px;
   }

@@ -1,38 +1,22 @@
 @import "./vendors/modern-normalize";
-
 @import "./utils/variables";
 @import "./utils/breakpoints";
-
 @import "./base/container";
-
 @import "./base/fonts";
 @import "./base/common";
-
 @import "./components/checkbox";
 @import "./components/button";
 @import "./components/social";
 @import "./components/logo";
-
 @import "./layouts/mobile-menu";
-
 @import "./layouts/header";
-
 @import "./layouts/hero";
-
 @import "./layouts/features";
-
 @import "./layouts/activity";
-
 @import "./layouts/team";
-
 @import "./layouts/clients";
-
 @import "./layouts/main";
-
 @import "./layouts/mosaic";
-
 @import "./layouts/footer";
-
 @import "./layouts/backdrop";
-
 @import "./layouts/modal";

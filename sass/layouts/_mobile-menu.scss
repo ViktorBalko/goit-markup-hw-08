@@ -121,6 +121,14 @@
   text-decoration: none;
 }
 
+.mobile-tel {
+  color: var(--active-text-color);
+}
+
+.mobile__mail {
+  color: var(--second-text-color);
+}
+
 .mobile__socials {
   display: flex;
   flex-wrap: wrap;
