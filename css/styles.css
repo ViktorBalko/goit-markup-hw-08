@@ -231,7 +231,7 @@ li {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -1166,14 +1166,12 @@ button:focus {
   .mosaic__box {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 30px;
-    grid-row-gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .mosaic__box {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
-    grid-row-gap: 30px;
   }
 }
 
@@ -1184,6 +1182,7 @@ button:focus {
 @media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .mosaic__component:first-child .mosaic__subtitle {
     padding-bottom: 55px;
+    padding-top: 13px;
   }
 }
 
