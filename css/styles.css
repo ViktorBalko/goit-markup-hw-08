@@ -231,8 +231,6 @@ li {
 
 img {
   display: block;
-  width: 100%;
-  height: auto;
 }
 
 .modal__checkbox {
@@ -1182,7 +1180,12 @@ button:focus {
 @media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .mosaic__component:first-child .mosaic__subtitle {
     padding-bottom: 55px;
-    padding-top: 13px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .mosaic__tablet {
+    height: 294px;
   }
 }
 
