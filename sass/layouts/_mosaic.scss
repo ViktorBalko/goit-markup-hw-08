@@ -24,7 +24,6 @@
   &:first-child .mosaic__subtitle {
     @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
       padding-bottom: 55px;
-      // padding-top: 13px;
     }
   }
 }
@@ -70,11 +69,11 @@
   top: 0;
   left: 0;
 
-  padding-bottom: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  // padding-bottom: 20px;
+  // padding-right: 24px;
+  // padding-left: 24px;
+  padding: 0px 24px 20px 24px;
+  margin: 0;
 
   font-family: Roboto;
   font-style: normal;
@@ -110,12 +109,8 @@
   line-height: 2;
   letter-spacing: 0.06em;
 
-  padding-top: 20px;
-  padding-bottom: 4px;
-  padding-right: 24px;
-  padding-left: 24px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  padding: 20px 24px 4px 24px;
+  margin: 0;
 }
 
 .mosaic__subtitle {
@@ -126,9 +121,11 @@
   line-height: 1.87;
   letter-spacing: 0.03em;
 
-  padding-bottom: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  // padding-bottom: 20px;
+  // padding-right: 24px;
+  // padding-left: 24px;
+  // margin-top: 0px;
+  // margin-bottom: 0px;
+  padding: 0px 24px 20px 24px;
+  margin: 0;
 }
