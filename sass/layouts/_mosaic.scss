@@ -41,6 +41,8 @@
 }
 
 .mosaic__image {
+  display: block;
+
   position: relative;
   overflow: hidden;
 }

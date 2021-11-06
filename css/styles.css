@@ -229,6 +229,12 @@ li {
   box-sizing: inherit;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .modal__checkbox {
   position: relative;
   display: inline-block;
@@ -1189,6 +1195,7 @@ button:focus {
 }
 
 .mosaic__image {
+  display: block;
   position: relative;
   overflow: hidden;
 }
